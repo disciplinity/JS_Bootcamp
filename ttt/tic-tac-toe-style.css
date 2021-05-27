@@ -1,0 +1,62 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#gameContainer {
+    width: 800px;
+    height: 670px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+    text-align: center;
+}
+
+.gameBoardRow {
+    display: flex;
+    width: 100%;
+    height: 33.3%;
+}
+
+.gameboardTile {
+    width: 33.3%;
+    height: 100%;
+    border: none;
+    font-size: 150px;
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: white;
+}
+
+.cross { color: 'red'; }
+.circle { color: 'blue'; }
+
+.gameboardTile:hover {
+    background-color: #e3e6e8;
+}
+
+.bl { border-left: 2px solid black; }
+.bt { border-top: 2px solid black; }
+.br { border-right: 2px solid black; }
+.bb { border-bottom: 2px solid black; }
+
+#title {
+    font-size: 65px;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#playButton {
+    font-size: 100px;
+    background-color: white;
+    border: none;
+    color: tomato;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+
+}
+
+#playButton:hover {
+    color: #eda095;
+}

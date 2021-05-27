@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <script src='rps.js'></script>
+        <link href="rps-style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id='mainWrapper'>
+            <div id='gameContainer'>
+                <div id='top' style='display: flex;'>
+                    <div id='topLeftPart'></div>
+                    <div style='display:flex;'>
+                        <span class='rps r'>R</span>
+                        <span class='rps p'>P</span>
+                        <span class='rps s'>S</span>
+                    </div>
+                    <div class='topRightPart'></div>
+                </div>
+
+                 <div id='imgContainer'>
+                    <img id='playerChoiceImg'/>
+                    <img id='enemyChoiceImg'/>
+                </div>
+
+                <div id='fightResult'>
+
+                </div>
+
+                <div id='controlsContainer'>
+                    <select id='playerWeaponSelect' onchange='chooseWeapon()'>
+                        <option value='not_selected'>Select a weapon</option>
+                        <option value='rock'>Rock</option>
+                        <option value='paper'>Paper</option>
+                        <option value='scissors'>Scissors</option>
+                    </select>
+                    <button id='playButton' onclick='play()'>Play</button>
+                </div>
+
+            </div>
+            <div id='historyContainer'>
+                <div id='label'>History</div>
+            </div>
+
+
+
+
+        </div>
+    </body>
+</html>

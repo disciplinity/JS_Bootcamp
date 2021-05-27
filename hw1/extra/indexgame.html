@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Game</title>
+        <script src="game2.js"></script>
+
+        <style>
+            body, html {
+                background-color: seagreen;
+            }
+            #content-wrapper {
+                background-color: rgb(117, 235, 156);
+                width: 50%;
+                /* margin-left: 50px;
+                margin-top: 100px; */
+                height: 50%;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid rgb(50, 206, 193);
+                /* margin: 0 auto; */
+            }
+            #monsters-life {
+                font-size: 100px;
+                color: #1f1b11;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                margin-right: 100px;               
+                
+            }
+            #your-life {
+                font-size: 100px;
+                color: #1f1b11;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            #announcements {
+	            border: black 2px solid
+            }
+
+            #announcements span {
+            	color: white;
+            }
+            #time {
+                font-size: 30px;
+                color: #11100c;
+                margin-left: 30px;
+               
+            }
+            .life-container {
+                display: flex;
+                justify-content: center;
+                padding: 50px;
+            
+            }
+            .button-container {
+                display: flex;
+                justify-content: center;
+            }
+            .buttons {
+                background-color: tomato;
+                padding: 6px;
+                width: 150px;
+                font-size: 25px;
+                margin-top: 20px;
+                font-family: "Orbitron", sans-serif;
+                outline: none;
+                border: 2px solid rgb(50, 206, 193);
+                border-radius: 4px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                justify-self: center;
+            }
+            .buttons:hover {
+                background-color: rgb(192, 41, 41);
+            }
+            .buttons:active {
+                background-color: rgb(83, 26, 16);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="content-wrapper">
+            <button id="start" class="buttons" onclick="start()">Start</button>
+            <div id="time">00:00</div>
+            <div class="life-container">
+                <div id="monsters-life">100</div>
+                <div id="your-life">100</div>
+            </div>
+            
+             <div id="buttonContainer" class="button-container">
+                <button id="attack" class="buttons" onclick="attack()">Attack</button>
+                <button id="counter" class="buttons" onclick="counter()">Counter</button>
+             </div>
+             <div id="announcements"></div>                         
+        </div>
+      
+
+    </body>
+</html>

@@ -1,0 +1,160 @@
+#mainWrapper {
+    width: 1024px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+}
+
+#gameContainer {
+    width: 66.6666%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+#historyContainer {
+    width: 33.3333%;
+    border-top: 1px solid black;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 50px;
+    overflow-y: auto;
+}
+
+#topLeftPart {
+    width: 30%;
+    height: 50px;
+    border-top: 1px solid black;
+}
+
+.topRightPart {
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid black;
+}
+ 
+.rps {
+    font-size: 70px;
+    position: relative;
+    top: -50%;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+
+.r { color: #793236 }
+.p { color: #3556E9 }
+.s { color: #248024 }
+
+
+#imgContainer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    width: 280px;
+    height: 220px;
+    border: 1px dashed darkgrey;
+    padding: 10px;
+}
+
+
+
+#controlsContainer {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#playButton {
+    width: 210px;
+    height: 50px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(25, 117, 25);
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#playerWeaponSelect {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 210px;
+    height: 50px;
+    border: 1px solid rgb(121, 63, 129);
+    outline: none;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#playButton:hover {
+    background-color: rgb(20, 160, 20);
+}
+
+#playButton:active {
+    background-color: rgb(4, 190, 4);
+}
+
+#label {
+    text-align: center;
+}
+
+#fightResult {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Comic Sans MS', sans-serif;
+}
+
+.historyRow {
+    font-size: 13px;
+    font-family:'Comic Sans MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.match {
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#fightResult {
+    width:100%;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Comic Sans MS", sans-serif;
+} */

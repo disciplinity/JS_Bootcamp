@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="calcstyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body>
+<div id="container">
+
+  <div id="calc-body">
+
+    <div id="display-content">
+      <input id="displayResult" type="text" disabled>
+    </div>
+
+    <div id="numbers-content">
+      
+      <button onclick="setValue(7)">7</button>
+      <button onclick="setValue(8)">8</button>
+      <button onclick="setValue(9)">9</button>
+      <button class="ops" onclick="setOperator('+')">+</button>
+
+      <button onclick="setValue(4)">4</button>
+      <button onclick="setValue(5)">5</button>
+      <button onclick="setValue(6)">6</button>
+      <button class="ops" onclick="setOperator('-')">-</button>
+
+      <button onclick="setValue(1)">1</button>
+      <button onclick="setValue(2)">2</button>
+      <button onclick="setValue(8)">3</button>
+      <button class="ops" onclick="setOperator('/')">/</button>
+
+      <button id="erase" onclick="erase()">C</button>
+      <button onclick="setValue(0)">0</button>
+      <button class="ops" onclick="setOperator('=')">=</button>
+      <button class="ops" onclick="setOperator('*')">*</button>
+
+    </div>
+</div>
+
+</div>
+</body>
+<script src="calc.js"></script> 
+</html>

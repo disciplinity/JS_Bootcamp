@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link href='ttt.css' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+        <div id='gameContainer'>
+            <div id='topControls'>
+                <div id='playButton' onclick='resetBoard()'>Play</div>
+                <div id='gameResult'>Tic Tac Toe</div>
+            </div>
+            <div id='gameBoard'>
+                <div class='boardRow'>
+                    <button id='b00' class='tile br' onclick='makeMove(0, 0)'></button>
+                    <button id='b10' class='tile br' onclick='makeMove(1, 0)'></button>
+                    <button id='b20' class='tile' onclick='makeMove(2, 0)'></button>
+                </div>
+                <div class='boardRow'>
+                    <button id='b01' class='tile bt br' onclick='makeMove(0, 1)'></button>
+                    <button id='b11' class='tile bt br' onclick='makeMove(1, 1)'></button>
+                    <button id='b21' class='tile bt' onclick='makeMove(2, 1)'></button>
+                </div>
+                <div class='boardRow'>
+                    <button id='b02' class='tile bt br' onclick='makeMove(0, 2)'></button>
+                    <button id='b12' class='tile bt br' onclick='makeMove(1, 2)'></button>
+                    <button id='b22' class='tile bt' onclick='makeMove(2, 2)'></button>
+                </div>
+            </div>
+        </div>
+
+        <script src="ttt.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <script src='tic-tac-toe.js'></script>
+        <link href="tic-tac-toe-style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id='gameContainer'>
+            <button id='playButton' onclick='resetBoard()'>Play</button>
+            <div id='title'>Tic-Tac-Toe</div>
+            <div id='gameBoard'>
+                <div class='gameBoardRow'>
+                    <button id='b00' class='gameboardTile br' onclick="makeMove(0,0)"></button>
+                    <button id='b10' class='gameboardTile br' onclick="makeMove(1,0)"></button>
+                    <button id='b20' class='gameboardTile' onclick="makeMove(2,0)"></button>
+                </div>
+
+                <div class='gameBoardRow'>
+                    <button id='b01' class='gameboardTile bt br' onclick="makeMove(0,1)"></button>
+                    <button id='b11' class='gameboardTile bt br' onclick="makeMove(1,1)"></button>
+                    <button id='b21' class='gameboardTile bt' onclick="makeMove(2,1)"></button>
+                </div>
+
+                <div class='gameBoardRow'>
+                    <button id='b02' class='gameboardTile bt br' onclick="makeMove(0,2)"></button>
+                    <button id='b12' class='gameboardTile bt br' onclick="makeMove(1,2)"></button>
+                    <button id='b22' class='gameboardTile bt' onclick="makeMove(2,2)"></button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

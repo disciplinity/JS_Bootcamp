@@ -1,0 +1,57 @@
+#gameContainer {
+    width: 800px;
+    height: 670px;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#topControls {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-family: 'Comic Sans MS', Verdana, Ariel, sans-serif;
+}
+
+#gameResult {
+    font-size: 50px;
+}
+
+#gameBoard {
+    width: 100%;
+    height: 90%;
+}
+
+#playButton {
+    width: 100%;
+    font-size: 80px;
+    color: tomato;
+    cursor: pointer;
+}
+
+#playButton:hover { color: #eda095 }
+
+.boardRow {
+    display: flex;
+    width: 100%;
+    height: 33.333%;
+}
+
+.tile {
+    width: 33.333%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 130px;
+    font-family: 'Comic Sans MS', Verdana, Ariel, sans-serif;
+}
+
+.tile:hover {
+    background-color: #e6e8eb;
+}
+
+.bl { border-left: 1px solid black; }
+.br { border-right: 1px solid black; }
+.bt { border-top: 1px solid black; }
+.bb { border-bottom: 1px solid black; }

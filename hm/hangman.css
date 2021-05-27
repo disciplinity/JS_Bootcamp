@@ -1,0 +1,63 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #eec795;
+}
+
+#mainWrapper {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+
+}
+
+#health {
+    font-size: 57px;
+    display: flex;
+    height: 55px;
+}
+
+#result {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 75px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#result:hover {
+    color: #229934;
+}
+
+.letter {
+    font-size: 150px;
+    border-bottom: 2px solid black;
+    margin: 5px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: black;
+}
+
+.letterRow {
+    display:flex;
+    justify-content: center;
+}
+
+.vkbLetter {
+    border: 2px solid black;
+    font-size: 100px;
+    width: 130px;
+    height: 110px;
+}
+
+.vkbLetter:hover {
+    background-color: rgb(235, 223, 223);
+    cursor: pointer;
+}
+

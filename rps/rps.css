@@ -1,0 +1,26 @@
+#mainWrapper {
+    width: 1024px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+#top {
+    display: flex;
+    width: 100%;
+}
+
+#topRow {
+    width: 30%;
+    height: 50px;
+    background-color: red;
+}
+
+#topRowMax {
+    width: 100%;
+    height: 50px;
+}

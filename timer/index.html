@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Lesson 6</title>
+    <script src='lesson_6.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <style>
+
+      body,html {
+        background-color: #87a187;
+      }
+
+      #content-wrapper {
+        background-color: #345734;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #0F2403;
+        
+      }
+
+      #time-container {
+        font-size: 90px;
+        color: #d9ad2b;
+        border-bottom: 1px solid #0F2403;
+        font-family: 'Orbitron', sans-serif;
+      }
+
+      #time {
+        margin: 0 auto;
+        width: 75%;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .buttons {
+        background-color: #c44010;
+        padding: 6px;
+        width: 130px;
+        font-size: 25px;
+        margin-top: 5px;
+        font-family: 'Orbitron', sans-serif;
+        outline: none;
+        border: 1px solid #A30200;
+        border-radius: 4px;
+        margin-right: 5px;
+      }
+
+      .buttons:hover {
+        background-color: #D64611;
+      }
+
+      .buttons:active {
+        background-color: #AB181D;
+      }
+
+      #select-box:active {
+        background-color: #D64611;
+      }
+
+    </style>
+  </head>
+
+  <body>
+      <div id='content-wrapper'>
+          <div id='time-container'>
+              <div id='time'>00:00:00</div>
+          </div>
+
+          <div class='button-container'>
+              <button id='start-stop-button' class='buttons' onclick="startStop()">Start</button>
+              <button id='reset-button' class='buttons' onclick="resetTimer()">Reset</button>
+              <select id='select-box' class='buttons' onchange='changeColor()'>
+                  <option value='#d9ad2b'>Gold</option>
+                  <option value='#00ff00'>Green</option>
+                  <option value='#ff0000'>Red</option>
+                  <option value='#ffffff'>White</option>
+                  <option value='#000000'>Black</option>
+                  <option value='random'>Random</option>
+
+              </select>
+          </div>
+          
+          
+      </div>
+      
+  </body>
+
+</html>
