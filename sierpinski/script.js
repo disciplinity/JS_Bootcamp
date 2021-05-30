@@ -2,7 +2,7 @@ let canvas = document.getElementById('myCanvas')
 let ctx    = canvas.getContext('2d')
 
 
-function drawLine(p0, p1, color='black') {
+function drawLine(p0, p1, color='green') {
     ctx.beginPath()
     ctx.moveTo(p0.x, p0.y)
     ctx.lineTo(p1.x, p1.y)
