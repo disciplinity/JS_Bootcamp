@@ -87,5 +87,6 @@ function fibonacciRecursive(n) {
 }
 
 fibonacciRecursive(1)
+console.log('hello')
 
 
