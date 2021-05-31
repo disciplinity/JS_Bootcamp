@@ -41,4 +41,4 @@ function drawFractal(p0, p1, p2, limit) {
 }
 
 
-drawFractal({x: 0, y: 400}, {x: 200, y: 0}, {x: 400, y: 400}, 6)
+drawFractal({x: 0, y: 600}, {x: 400, y: 0}, {x: 800, y: 600}, 7)

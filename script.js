@@ -1,92 +1,105 @@
+// function findSum(numbers) {
+//     let sum = 0
+//     // for (let i = 0; i < numbers.length; i++) {
+//     //     sum += numbers[i]
+//     // }
+//     for (let nr of numbers) {
+//         sum += nr
+//     }
+//     return sum
+// }
+
+// let nr = 8
+// let shifted = nr << 1
+// console.log(shifted)
 
 
-function findSum(arr) {
-    let sum = 0
-    for (let nr of arr) {
-        sum += nr
-    }
-    return sum
-}
-// console.log(findSum([1, 2, 3])) // Should return 6
-
-function reverseText(text) {
-    let reversedText = ''
-    for (let i = text.length - 1; i >= 0; i--) {
-        reversedText += text[i]
-    }
-    return reversedText
-}
-// console.log(reverseText('ABC'))
-
-
-
-function sumOfPowers(arr, power) {
-    let sum = 0
-    for (let i = 0; i < arr.length; i++) {
-        sum += Math.pow(arr[i], power)
-    }
-    return sum
-}
-
-
-// let numbers = [5, 3, 2, 4, 1]
-// function sortFunction(a, b) {
+// let arr = [1, 9, 5]
+// arr.sort(function(a,b) {
 //     return b - a
+// })
+
+// function greetEveryone(names) {
+//     // for (let i = 0; i < names.length; i++) {
+//     //     console.log('Hello ' + names[i])
+//     // }
+//     for (let name of names) {
+//         console.log('Hello ' + name)
+//     }
 // }
-// numbers.sort(sortFunction)
-// console.log(numbers)
+// greetEveryone(['Indra', 'Elina', 'Anna'])
 
-// let words = ['A', 'DASDAS', 'BC', 'EQWOO', 'QWwwW', 'WQE']
-// words.sort(function(a, b) {
-//     return a.length - b.length
-// })
-// console.log(words)
-
-// let nrs = [1, 4, 7, 8, 9, 12, 13, 15, 16]
-
-// nrs = nrs.map((nr) => { return nr * 3 })
-//         .filter((nr) => { return nr % 2 === 0 })
-//         .sort((a, b) => { return b - a })
-
-// console.log(nrs)
-
-// for (let i = 0; i < nrs.length; i++) {
-//     nrs[i] = nrs[i] * 2 
-// }
-
-// nrs = nrs.map(function(nr) {
-//     return nr * 2
-// })
-
-// nrs = nrs.filter(function(nr) {
-//     return nr % 2 === 0
-// })
-
-
-function fibonacci(n) {
-
-    let firstNumber  = 0
-    let secondNumber = 1
-    let currentNumber = null
-
-    for (let i = 2; i < n; i++) {
-        currentNumber = firstNumber + secondNumber
-        firstNumber = secondNumber
-        secondNumber = currentNumber
-    }
-    return currentNumber
-}
-// console.log(fibonacci(9))
-
-function fibonacciRecursive(n) {
-    if (n <= 1) { 
-        return n
+class Array {
+    constructor() {
+        this.collection = []
     }
 
-    return fibonacciRecursive(n-2) + fibonacciRecursive(n-1)
+    at(index) {
+        return this.collection[index]
+    }
+
+    push(el) {
+        this.collection.push(el)
+    }
+
+    selectionSort() {
+        for (let i = 0; i < this.collection.length; i++) {
+            let min = this.collection[i]
+            let ri = -1
+            for (let j = i + 1; j < this.collection.length; j++) {
+                if (this.collection[j] < min) {
+                    min = this.collection[j]
+                    ri = j
+                }
+            }
+            
+            if (ri !== -1) {
+                let replacable = this.collection[i]
+                this.collection[i]  = min
+                this.collection[ri] = replacable
+            }
+        }
+    }
+
+    // bubbleSort() {
+    //     for (let _ = 0; this.collection.length - 1; _++) {
+    //         for (let i = 0; i < this.collection.length - 1; i++) {
+    //             if (this.collection[i] > this.collection[i + 1]) {
+    //                 let original = this.collection[i]
+    //                 this.collection[i] = this.collection[i + 1]
+    //                 this.collection[i + 1] = original
+    //             }
+    //         }
+    //     }
+    // }
 }
 
-fibonacciRecursive(1)
-console.log('hello')
+// let myArray = new Array()
+// myArray.push(9)
+// myArray.push(4)
+// myArray.push(1)
+// myArray.push(5)
+// myArray.bubbleSort()
+// console.log(myArray)
+
+
+function subtract(a, b) {
+    return a - b
+}
+
+function add(a, b) {
+    return a + b
+}
+
+function calculate(mathematicalOperation, a, b) {
+    return mathematicalOperation(a, b)
+}
+
+
+let r = calculate((a, b) => { return a / b }, 5, 10)
+console.log(r)
+
+
+
 
 
