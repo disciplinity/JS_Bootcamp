@@ -100,6 +100,9 @@ let r = calculate((a, b) => { return a / b }, 5, 10)
 console.log(r)
 
 
+console.log('Hello')
+
+
 
 
 
